@@ -1,6 +1,24 @@
 [package]
 name = "typr"
 version = "0.1.0"
+description = "typing TUI in Rust to practice typing speed and efficiency."
+readme = "README.md"
 edition = "2021"
+exclude = [".github", "*.log", "Dockerfile"]
+keywords = ["tui", "terminal", "typing", "wpm", "utility"]
+
+[lints.rust]
+unsafe_code = "forbid"
+# unused = "allow"
 
 [dependencies]
+tui = { version = "0.17", default-features = false, features = ['crossterm'] }
+serde = { version = "1.0", features = ["derive"] }
+clap = { version = "3.1.1", features = ["derive"] }
+serde_json = "1.0.79"
+rand = "0.8.5"
+itertools = "0.10.3"
+unicode-width = "0.1.9"
+include_dir = "0.7.2"
+directories = "4.0"
+chrono = "0.4"
