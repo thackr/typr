@@ -1,6 +1,6 @@
-mod syrup;
+mod typr;
 
 fn main() {
-    let result = syrup::add(2, 2);
+    let result = typr::add(2, 2);
     println!("Result is {}", result);
 }
